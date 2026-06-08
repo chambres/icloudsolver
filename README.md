@@ -27,6 +27,7 @@ go build -o icloud-code.exe
 ```
 
 `add_startup.ps1` drops a shortcut in your Startup folder so it launches on
-login (edit the path inside it to wherever you put the exe).
+login. It points at the exe sitting next to it (`$PSScriptRoot`), so just run it
+from wherever you built.
 
 Windows only — it's all Win32 API.
